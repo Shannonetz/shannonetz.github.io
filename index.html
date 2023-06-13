@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Prospective Customer Survey</h1>
+    <p id="description">Please use this form to share information about your event and how we can contact you.</p>
+    <form id="survey-form">
+        <fieldset>
+        <label for="name" id="name-label"><input id="name" type="text" placeholder="Provide your name" required>Full name</label>
+        <label for="email" id="email-label"> <input type="email" name="email" id="email" placeholder="Enter your email" required>Email address</label>
+        <label for="number" id="number-label"><input type="number" name="number" id="number" min="2" max="200" placeholder="Number of guests">Number of guests</label>
+        <label for="date" id="date"><input type="date" name="event-date" id="date" placeholder="What is the date of your event?">Event date</label>
+        </fieldset>
+
+        <fieldset><legend>Event Type</legend>
+        <label for="private-event"><input type="radio" name="event-type" id="private-event" value="private" class="inline">Private Event</label>
+        <label for="public-event"></label><input type="radio" name="event-type" id="public-event" value="public" class="inline">Public Event</label>
+        </fieldset>
+
+        <fieldset><legend>Dessert Options</legend>
+        <select name="dropdown" id="dropdown">
+            <option value="one" selected disabled>Please select an option</option>
+            <option value="two">Single Dessert Option</option>
+            <option value="three">Two Dessert Options</option>
+            <option value="four">Three Dessert Options</option>
+            <option value="five">Four Dessert Options</option>
+            <option value="six">Five Dessert Options</option>
+            <option value="seven">Six Dessert Options</option>
+        </select>
+        <h2>Allergies to consider:</h2>
+        <label for="gluten"><input type="checkbox" name="allergies" id="gluten" value="Gluten" class="inline">Gluten Allergies</label>
+        <label for="dairy"></label><input type="checkbox" name="allergies" id="dairy" value="dairy" class="inline">Dairy Allergies</label>
+        <label for="eggs"></label><input type="checkbox" name="allergies" id="eggs" value="eggs" class="inline">Egg Allergies</label>
+        <label for="nuts"></label><input type="checkbox" name="allergies" id="nuts" value="nuts" class="inline">Nut Allergies</label>
+        <label for="other"></label><input type="checkbox" name="allergies" id="other" value="other" class="inline">Other Allergies</label>
+    </fieldset>
+    <fieldset>
+        <textarea name="comments" id="comments" cols="30" rows="10">Please use this space to share any additional information that would be helpful to our team.</textarea>
+    </fieldset>
+   <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
