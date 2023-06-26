@@ -1,3 +1,8 @@
+/*Shannon Etz
+Project 1 Survey Form
+06-14-2023*/
+
+/*Page as a whole*/
 body {
     width: 100%;
     height: 100vh;
@@ -7,62 +12,120 @@ body {
     font-family: Helvetica;
     font-size: 16px;
   }
-  h1, p {
-    margin: 1em auto;
-    text-align: center;
-    max-width: 500px;
-    min-width: 300px;
-  }
-  h1{color:#C86B85}
 
+/*Title*/
+  h1{
+    margin: 10px auto;
+    text-align: center;
+    max-width: 300px;
+    min-width: 200px;
+    color:#C86B85;
+    max-width:600px;
+    padding-bottom:5px;
+  }
+
+  /*Form Description*/
+  p {
+    margin: auto;
+    text-align: center;
+    max-width: 475px;
+    min-width: 200px;
+  }
+
+/*Form*/
   form {
-    width: 60vw;
+    width: 60vw; 
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
+    padding: 10px;
   }
   
+  /*Form Sections*/
   fieldset {
     border: none;
-    padding: 5px 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
     border-bottom: 3px solid #C86B85;
+    max-width:500px;
+    min-width:300px;
   }
   
+  /*Last form section*/
   fieldset:last-of-type {
     border-bottom: none;
+    padding-top: 15px;
+  }
+
+  /*First form section*/
+  fieldset:first-of-type{
+    border-top: 3px solid #C86B85;
   }
   
+  /*labels for input fields*/
   label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.25rem auto;
+    cursor: pointer;
+    padding-top:10px;
   }
   
+  /*Form entry fields*/
   input,
-  textarea,
+  textarea {
+    margin: 5px 0 5px 0;
+    width: 100%;
+    min-height: 1.75em;
+    font-family:helvetica;
+    font-size: 14px;
+    cursor: text;
+    padding: 5px 5px 5px 5px;
+  }
+
+  /*selection fields*/
   select {
-    margin: 5px 0 0 0;
+    margin: 5px 5px 0 0;
     width: 100%;
     min-height: 2em;
     font-family:helvetica;
     font-size: 14px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
   }
 
+  /*labels for select fields*/
   .inline {
     width: unset;
-    margin: 0 0.5em 0 0;
+    margin: 0 0.7em 0 0;
     vertical-align: middle;
   }
 
+  /*submit button*/
  button{
     display: block;
     width: 40%;
     margin: 1em auto;
-    height: 2em;
+    height: 3.5em;
     font-size: 1.1rem;
     background-color: #C86B85;
-    min-width: 150px;}
+    min-width: 150px;
+    cursor:pointer;
+    border-radius: 70%;
+    border:white;
+    box-shadow: 2px 2px 2px rgb(180, 179, 179);
+}
 
-legend{font-weight: bold; padding-top: 5px;}
+ /*section labels for last three sections*/
+legend{
+  font-weight: bold; 
+  padding-top: 15px;
+}
 
-h2{font-size: 16px; font-weight: lighter; font-family: helvetica; font-style: italic;}
+  /*allergies title*/
+h2{
+  font-size: 16px; 
+  font-weight: lighter; 
+  font-family: helvetica; 
+  font-style: italic;
+}
