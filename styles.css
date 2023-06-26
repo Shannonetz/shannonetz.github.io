@@ -50,6 +50,7 @@ body {
     border-bottom: 3px solid #C86B85;
     max-width:500px;
     min-width:300px;
+    padding-inline-start:0px;
   }
   
   /*Last form section*/
@@ -86,7 +87,7 @@ body {
   /*selection fields*/
   select {
     margin: 5px 5px 0 0;
-    width: 100%;
+    width: 103%;
     min-height: 2em;
     font-family:helvetica;
     font-size: 14px;
