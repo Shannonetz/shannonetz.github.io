@@ -11,9 +11,11 @@ p{
     color:#4E4E56;
     font-family:Quicksand;
     font-size: 16px;
-    max-width:600px;
-    min-width:150px;
-    justify-items:center;
+}
+
+/*adjusting margin of bottom of bio text to move next title down*/
+.bio{
+    margin: 0 0 20px 0;
 }
 
 /*Subtopic headers*/
@@ -65,64 +67,44 @@ li a:hover{
 }
  
 /*profile image*/
-.image{
-    max-height:200px;
-    object-fit:cover;
+.bio-pic{
+    float:right;
+}
+
+#image{
+    max-height:275px;
+    width:100%;
     border-radius: 10px;
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
+}
+
+.img-div{
+    margin:0;
 }
 
 /* top section bio and pic*/
-div{
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-}
-.upper-image{
-    float:right;
-    width:40%;
-    text-align:center;
-    margin:0 0 0 15px;
-    padding:50px 10px 100px 10px;
-}
+
 .tribute-info{ 
-    float:left;
-    width:50%;
-    height:300px;
-    justify-content:center;
-    justify-items:center;
-    margin:15px;
+    max-width:900px;
+    margin:auto;
     text-indent: 2rem;
+    padding:25px;
 }
 
 /*bottom paragraph*/
 .subtopic-title{
-    justify-content:center;
-    justify-items:center;
-    align-items:center;
-    text-align:center;
-    float:center;
     margin: 15px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
-    float:center;
-}
 
+}
+/* work togther paragraph text */
 .paragraph2{
-    justify-content:center;
-    justify-items:center;
-    align-items:center;
-    float:center;
-    margin: 15px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    float:center;
+    text-indent: 2rem;
 }
-
+/*Work together section*/
 .bottom{
-    margin:2% 10% 2% 10%;
+    max-width:900px;
+    margin:auto;
     padding:25px;
-    align-items: center;
-    float:center;
 }
 
 /*image trio*/
@@ -145,11 +127,10 @@ div{
   /*learn more box at bottom*/
   .box{
     background-color: #5cc1BE;
-    text-align:center;
-    align-items: center;
-    display:flexbox;
-    margin:2% 25% 2% 25%;
     max-width:500px;
+    margin:40px auto 40px auto;
+    padding:25px;
+    text-align:center;
     padding:5px 5px 5px 5px;
     border-radius:10px;
   }
@@ -164,4 +145,5 @@ div{
     color:#FFFFFF;
     margin: 10px 10px 0 0;
     display:block;
+    text-align:center;
   }
