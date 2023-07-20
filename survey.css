@@ -1,0 +1,171 @@
+/*Shannon Etz
+Project 1 Survey Form
+06-14-2023*/
+
+/*Page as a whole*/
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+  }
+
+/*Title*/
+  h1{
+    margin: 10px auto;
+    text-align: center;
+    min-width: 200px;
+    max-width:800px;
+    padding-bottom:5px;
+    color: #A62154;
+    font-family:Licorice;
+    font-size: 80px;
+  }
+
+  /*Form Description*/
+  p {
+    margin: auto;
+    text-align: center;
+    max-width: 475px;
+    min-width: 200px;
+    color:#4E4E56;
+    font-family:Quicksand;
+    font-size: 16px;
+  }
+
+/*Form*/
+  form {
+    width: 60vw; 
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding: 10px;
+    color:#4E4E56;
+    font-family:Quicksand;
+    font-size: 16px;
+  }
+  
+  /*Form Sections*/
+  fieldset {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #C86B85;
+    max-width:500px;
+    min-width:300px;
+    padding-inline-start:0px;
+    
+  }
+  
+  /*Last form section*/
+  fieldset:last-of-type {
+    border-bottom: none;
+    padding-top: 15px;
+  }
+
+  /*First form section*/
+  fieldset:first-of-type{
+    border-top: 3px solid #C86B85;
+  }
+  
+  /*labels for input fields*/
+  label {
+    display: block;
+    margin: 0.25rem auto;
+    cursor: pointer;
+    padding-top:10px;
+  }
+  
+  /*Form entry fields*/
+  input,
+  textarea {
+    margin: 5px 0 5px 0;
+    width: 100%;
+    min-height: 1.75em;
+    cursor: text;
+    padding: 5px 5px 5px 5px;
+    color:#4E4E56;
+    font-family:Quicksand;
+    font-size: 16px;
+  }
+
+  /*selection fields*/
+  select {
+    margin: 5px 5px 0 0;
+    width: 103%;
+    min-height: 2.75em;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    color:#4E4E56;
+    font-family:Quicksand;
+    font-size: 16px;
+  }
+
+  /*labels for select fields*/
+  .inline {
+    width: unset;
+    margin: 0 0.7em 0 0;
+    vertical-align: middle;
+  }
+
+  /*submit button*/
+ button{
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 3.5em;
+    font-size: 1.1rem;
+    background-color: #5cc1BE;
+    min-width: 150px;
+    cursor:pointer;
+    border-radius: 70%;
+    border:white;
+    box-shadow: 2px 2px 2px rgb(180, 179, 179);
+}
+
+ /*section labels for last three sections*/
+legend{
+  font-weight: bold; 
+  padding-top: 15px;
+  color:#A62154
+}
+
+  /*allergies title*/
+h2{
+  font-size: 16px; 
+  font-weight: lighter; 
+  font-family: quicksand; 
+  font-style: italic;
+}
+
+
+/*navigation bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5cc1BE;
+}
+
+li a {
+  display: block;
+  color: #4E4E56;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Quicksand;
+  font-weight:bold;
+}
+
+li a:hover{
+  background-color:#C78671;
+  color:#FFFFFF;
+}
+
+.page-description{
+  padding-top:15px;
+}

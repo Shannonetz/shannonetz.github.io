@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospective Customer Contact Form</title>
+    <link rel="stylesheet" href="survey.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Licorice">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!--Shannon Etz
+    Project 1 - Survey Form
+    06-14-2023-->
+
+</head>
+<body>
+    <header>
+        <!--Page title-->
+       <h1 id="title">Prospective Customer Form</h1>
+       <!--Page navigaation-->
+       <nav>
+           <ul class="list">
+            <li style="float:right"> <a href="#">Request Form</a></li>
+            <li style="float:right"><a href="#">Projects</a></li>
+            <li style="float:right"> <a href="#">Home</a></li>
+           </ul>
+       </nav>
+   </header>
+   <p id="description" class="page-description">Thank you for your interest in providing our desserts at your next event. Please use this form to share information about your event with our staff.</p>
+    
+    <!--Contact Details-->
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Full name (*required)</label><input id="name" type="text" placeholder="Provide your name" required></input>
+            <label for="email" id="email-label">Email address (*required)</label><input id="email" name="email" type="email" placeholder="Enter your email" required></input>
+            <label for="number" id="number-label">Number of guests</label><input type="number" name="number" id="number" min="2" max="200" placeholder="Number of guests"></input>
+            <label for="date" id="date">Event date (*required)</label><input type="date" name="event-date" id="date" required placeholder="What is the date of your event?"></input>
+        </fieldset>
+    
+        <!--Event Details-->
+        <fieldset><legend>Event Type</legend>
+        <label for="private-event"><input type="radio" name="event-type" id="private-event" value="private" class="inline">Private Event</label>
+        <label for="public-event"></label><input type="radio" name="event-type" id="public-event" value="public" class="inline">Public Event</label>
+        </fieldset>
+    
+        <!--Dessert Options Dropdown-->
+        <fieldset><legend>Dessert Options</legend>
+        <select name="dropdown" id="dropdown" required>
+            <option value="one" selected disabled>Please select an option (*required)</option>
+            <option value="two">Single Dessert Option</option>
+            <option value="three">Two Dessert Options</option>
+            <option value="four">Three Dessert Options</option>
+            <option value="five">Four Dessert Options</option>
+            <option value="six">Five Dessert Options</option>
+            <option value="seven">Six Dessert Options</option>
+        </select>
+   
+        <!--Allergies-->    
+        <h2>Allergies to consider:</h2>
+        <label for="gluten"><input type="checkbox" name="allergies" id="gluten" value="Gluten" class="inline">Gluten Allergies</label>
+        <label for="dairy"></label><input type="checkbox" name="allergies" id="dairy" value="dairy" class="inline">Dairy Allergies</label>
+        <label for="eggs"></label><input type="checkbox" name="allergies" id="eggs" value="eggs" class="inline">Egg Allergies</label>
+        <label for="nuts"></label><input type="checkbox" name="allergies" id="nuts" value="nuts" class="inline">Nut Allergies</label>
+        <label for="other"></label><input type="checkbox" name="allergies" id="other" value="other" class="inline">Other Allergies</label>
+    </fieldset>
+
+    <!--Additional Details Textfield-->
+    <fieldset>
+        <legend>Additional Details</legend>
+        <textarea name="comments" id="comments" cols="30" rows="10">Please use this space to share any additional information that would be helpful to our team.</textarea>
+    </fieldset>
+
+    <!--Submission Button-->
+   <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

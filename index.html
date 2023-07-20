@@ -4,63 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prospective Customer Contact Form</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!--Shannon Etz
-    Project 1 - Survey Form
-    06-14-2023-->
-
+    <meta name="description" content="This tribute page shows informmation about the bakery history and owner">
+    <title>Desert Desserts Bakery Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Licorice">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!--
+    Shannon Etz
+    Portfolio Page
+    CIS133DA:Web Design/Development Level 1
+    July 2023-->
 </head>
 <body>
-    
-    <!--Title and Description-->
-    <h1 id="title">Prospective Customer Form</h1>
-    <p id="description">Thank you for your interest in providing our desserts at your next event. Please use this form to share information about your event with our staff.</p>
-    
-    <!--Contact Details-->
-    <form id="survey-form">
-        <fieldset>
-            <label for="name" id="name-label">Full name (*required)</label><input id="name" type="text" placeholder="Provide your name" required></input>
-            <label for="email" id="email-label">Email address (*required)</label><input id="email" name="email" type="email" placeholder="Enter your email" required></input>
-            <label for="number" id="number-label">Number of guests</label><input type="number" name="number" id="number" min="2" max="200" placeholder="Number of guests"></input>
-            <label for="date" id="date">Event date (*required)</label><input type="date" name="event-date" id="date" required placeholder="What is the date of your event?"></input>
-        </fieldset>
-    
-        <!--Event Details-->
-        <fieldset><legend>Event Type</legend>
-        <label for="private-event"><input type="radio" name="event-type" id="private-event" value="private" class="inline">Private Event</label>
-        <label for="public-event"></label><input type="radio" name="event-type" id="public-event" value="public" class="inline">Public Event</label>
-        </fieldset>
-    
-        <!--Dessert Options Dropdown-->
-        <fieldset><legend>Dessert Options</legend>
-        <select name="dropdown" id="dropdown" required>
-            <option value="one" selected disabled>Please select an option (*required)</option>
-            <option value="two">Single Dessert Option</option>
-            <option value="three">Two Dessert Options</option>
-            <option value="four">Three Dessert Options</option>
-            <option value="five">Four Dessert Options</option>
-            <option value="six">Five Dessert Options</option>
-            <option value="seven">Six Dessert Options</option>
-        </select>
-   
-        <!--Allergies-->    
-        <h2>Allergies to consider:</h2>
-        <label for="gluten"><input type="checkbox" name="allergies" id="gluten" value="Gluten" class="inline">Gluten Allergies</label>
-        <label for="dairy"></label><input type="checkbox" name="allergies" id="dairy" value="dairy" class="inline">Dairy Allergies</label>
-        <label for="eggs"></label><input type="checkbox" name="allergies" id="eggs" value="eggs" class="inline">Egg Allergies</label>
-        <label for="nuts"></label><input type="checkbox" name="allergies" id="nuts" value="nuts" class="inline">Nut Allergies</label>
-        <label for="other"></label><input type="checkbox" name="allergies" id="other" value="other" class="inline">Other Allergies</label>
-    </fieldset>
-
-    <!--Additional Details Textfield-->
-    <fieldset>
-        <legend>Additional Details</legend>
-        <textarea name="comments" id="comments" cols="30" rows="10">Please use this space to share any additional information that would be helpful to our team.</textarea>
-    </fieldset>
-
-    <!--Submission Button-->
-   <button type="submit" id="submit">Submit</button>
-    </form>
+    <header>
+         <!--Page title-->
+        <h1 id="title">Desert Desserts Bakery</h1>
+        <img id="header-img" class="header-img" src="https://images.unsplash.com/photo-1513870931673-fa0ab3de2e09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="macarons in display case"/>
+        <!--Page navigation-->
+        <nav>
+            <ul class="list">
+                <li style="float:right"> <a href="Shannonetz.github.io/survey.html">Request Form</a></li>
+                <li style="float:right"><a href="Shannonetz.github.io/index.html">Projects</a></li>
+                <li style="float:right"> <a href="Shannonetz.github.io/tribute.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main id="main">
+            <!--embedded video-->
+            <div class="video">  
+                <h2>We're excited to be part of your event!</h2>
+                <video width="500"controls>
+                    <source> src="Shannonetz.github.io/dessert_table_video.mp4" type="video/mp4">
+                </video>
+            </div>  
+            <!--image trio and descriptions-->
+            <div class="products">
+                <figure class="product1">
+                    <h2>Single Dessert</h2>
+                    <img class="img1" src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1650&q=80" alt="cake with chocolate drip"/>
+                    <p>Need a sweet treat for your event? A single dessert option is a great option that will seamlessly blend with your other plans.</p>
+                </figure>
+                <figure class="product2">
+                    <h2>Duo Dessert Display</h2>
+                    <img class="img2" src="https://images.unsplash.com/photo-1584126467127-4fee1e5a1e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="two cupcake varieties displayed"/>
+                    <p>Do you need a display to incorporate desserts into your event? This option provides duo of our most popular desserts in a beautiful display.</p>
+                </figure>
+                <figure class="product3">
+                 <h2>Dessert Bar</h2>
+                    <img class="img3" src="https://images.unsplash.com/photo-1561940329-7382e6704231?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="pastel dessert display"/>
+                    <p>It's like a full-service bar for your sweet tooth. We'll work with you to customize your dessert flavors and display to perfectly complement your event.</p>
+                </figure>
+            </div>
+            <!--footer-->
+            <footer>
+                <p class="page-footer">Phone Number: (123) 456-7891 | Email Address: Shannon@DesertBakery.com
+                </p>
+            </footer>
+        </main>
 </body>
 </html>
