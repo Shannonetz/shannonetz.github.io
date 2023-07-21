@@ -15,7 +15,7 @@ p{
 }
 
 /*Subtopic headers*/
-h2{
+h3{
     color:#A62154;
     font-family:Quicksand;
     font-size:25px;
@@ -73,7 +73,7 @@ li a:hover{
    /*video formatting*/
 .video{
     width:500px;
-    height:auto;
+    height:100vh;
     margin:auto;
     float:center;
     padding-top:20px;
@@ -91,7 +91,7 @@ li a:hover{
 }
 
 /*figures*/
-.product1, .product2, .product3{
+.project-tile1, .project-tile2, .project-tile3{
     width:300px;
     text-align:center;
     background-color:#e3b7a8;
@@ -100,10 +100,74 @@ li a:hover{
 }
 
 /*alignment*/
-.products{
+.projects{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content:center;
     padding-top: 60px;
+}
+
+
+.mailing-list{
+  color:#5cc1BE;
+  background-color:#FFFFFF;
+}
+
+form{
+  background-color:#C78671;
+  padding-bottom:10px;
+  width:300px;
+  margin: 0 auto;
+  text-align:center;
+  border-radius:10px;
+}
+
+fieldset {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-inline-start:0px;
+  
+}
+  /*labels for input fields*/
+  label {
+    display: block;
+    margin: 0.25rem auto;
+    cursor: pointer;
+    padding-top:5px;
+    font-family:Quicksand;
+  }
+  
+  /*Form entry fields*/
+  input{
+    min-height: 1.75em;
+    cursor: text;
+    padding: 5px 5px 5px 5px;
+    color:#4E4E56;
+    font-family:Quicksand;
+    font-size: 16px;
+    display:inline-block;
+  }
+
+  /*submit button*/
+ button{
+    display: block;
+    width: 20%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #5cc1BE;
+    font-family:Quicksand;
+    min-width: 100px;
+    cursor:pointer;
+    border-radius: 10px;
+    border:white;
+    box-shadow: 2px 2px 2px rgb(180, 179, 179);
+  }
+
+
+   /*profile link text*/
+.profile-link{
+  text-align:center;
 }

@@ -16,7 +16,7 @@
     July 2023-->
 </head>
 <body>
-    <header>
+    <header id="welcome-section">
          <!--Page title-->
         <h1 id="title">Desert Desserts Bakery</h1>
         <img id="header-img" class="header-img" src="https://images.unsplash.com/photo-1513870931673-fa0ab3de2e09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="macarons in display case"/>
@@ -24,8 +24,8 @@
         <nav>
             <ul class="list">
                 <li style="float:right"> <a href="Shannonetz.github.io/survey.html">Request Form</a></li>
-                <li style="float:right"><a href="Shannonetz.github.io/index.html">Projects</a></li>
-                <li style="float:right"> <a href="Shannonetz.github.io/tribute.html">Home</a></li>
+                <li style="float:right"><a href="Shannonetz.github.io/tribute.html">About Us</a></li>
+                <li style="float:right"> <a href="Shannonetz.github.io/index.html">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -34,31 +34,44 @@
             <div class="video">  
                 <h2>We're excited to be part of your event!</h2>
                 <video width="500"controls>
-                    <source> src="Shannonetz.github.io/dessert_table_video.mp4" type="video/mp4">
+                    <source src="https://player.vimeo.com/video/377065649" type="video/mp4">
                 </video>
             </div>  
             <!--image trio and descriptions-->
-            <div class="products">
-                <figure class="product1">
-                    <h2>Single Dessert</h2>
+            <div class="projects">
+                <figure class="project-tile1">
+                    <h3>Single Dessert</h3>
                     <img class="img1" src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1650&q=80" alt="cake with chocolate drip"/>
                     <p>Need a sweet treat for your event? A single dessert option is a great option that will seamlessly blend with your other plans.</p>
                 </figure>
-                <figure class="product2">
-                    <h2>Duo Dessert Display</h2>
+                <figure class="project-tile2">
+                    <h3>Duo Dessert Display</h3>
                     <img class="img2" src="https://images.unsplash.com/photo-1584126467127-4fee1e5a1e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="two cupcake varieties displayed"/>
                     <p>Do you need a display to incorporate desserts into your event? This option provides duo of our most popular desserts in a beautiful display.</p>
                 </figure>
-                <figure class="product3">
-                 <h2>Dessert Bar</h2>
+                <figure class="project-tile3">
+                 <h3>Dessert Bar</h3>
                     <img class="img3" src="https://images.unsplash.com/photo-1561940329-7382e6704231?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="pastel dessert display"/>
                     <p>It's like a full-service bar for your sweet tooth. We'll work with you to customize your dessert flavors and display to perfectly complement your event.</p>
                 </figure>
             </div>
+            <!--mailing list-->
+            <h3 class="mailing-list">Join Our Mailing List</h3>
+            <form id="email-list">
+                <fieldset>
+                    <label for="email" id="email-label">Email address (*required)</label><input id="email" name="email" type="email" placeholder="Enter your email" required></input>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <section id="bio">
+                <p class="profile-link" id="profile-link">Learn more about my work <a href="https://www.freecodecamp.org/shannonetz">here</a></a>.</p>
+            </div>
             <!--footer-->
             <footer>
+                <div>
                 <p class="page-footer">Phone Number: (123) 456-7891 | Email Address: Shannon@DesertBakery.com
                 </p>
+            </div>
             </footer>
         </main>
 </body>
