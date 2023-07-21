@@ -15,7 +15,7 @@ p{
 }
 
 /*Subtopic headers*/
-h3{
+h3, h2{
     color:#A62154;
     font-family:Quicksand;
     font-size:25px;
@@ -73,7 +73,7 @@ li a:hover{
    /*video formatting*/
 .video{
     width:500px;
-    height:100vh;
+    height:100%;
     margin:auto;
     float:center;
     padding-top:20px;
