@@ -21,25 +21,26 @@
         <h1 id="title">Desert Desserts Bakery</h1>
         <img id="header-img" class="header-img" src="https://images.unsplash.com/photo-1513870931673-fa0ab3de2e09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="macarons in display case"/>
         <!--Page navigation-->
-        <nav>
+        <nav id="navbar" class="navbar">
             <ul class="list">
-                <li style="float:right"> <a href="Shannonetz.github.io/survey.html">Request Form</a></li>
-                <li style="float:right"><a href="Shannonetz.github.io/tribute.html">About Us</a></li>
-                <li style="float:right"> <a href="Shannonetz.github.io/index.html">Home</a></li>
+                <li style="float:right"> <a href="survey.html">Request Form</a></li>
+                <li style="float:right"><a href="tribute.html">About Us</a></li>
+                <li style="float:right"> <a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
         <main id="main">
             <!--embedded video-->
+            <section id="projects">
             <div class="video">  
                 <h2>We're excited to be part of your event!</h2>
-                <video width="500"controls>
-                    <source src="https://player.vimeo.com/video/377065649" type="video/mp4">
+                <video width="500" autoplay loop>
+                    <source src="dessert_table_video.mp4" type="video/mp4">
                 </video>
             </div>  
             <!--image trio and descriptions-->
             <div class="projects">
-                <figure class="project-tile1">
+                <figure class="project-tile">
                     <h3>Single Dessert</h3>
                     <img class="img1" src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1650&q=80" alt="cake with chocolate drip"/>
                     <p>Need a sweet treat for your event? A single dessert option is a great option that will seamlessly blend with your other plans.</p>
@@ -55,17 +56,19 @@
                     <p>It's like a full-service bar for your sweet tooth. We'll work with you to customize your dessert flavors and display to perfectly complement your event.</p>
                 </figure>
             </div>
+            </section>
             <!--mailing list-->
             <h3 class="mailing-list">Join Our Mailing List</h3>
             <form id="email-list">
                 <fieldset>
-                    <label for="email" id="email-label">Email address (*required)</label><input id="email" name="email" type="email" placeholder="Enter your email" required></input>
+                    <label for="email" id="email-label">Email address (*required)</label><input id="email" name="email" type="email" placeholder="Enter your email" required>
                 </fieldset>
                 <button type="submit" id="submit">Submit</button>
             </form>
             <section id="bio">
-                <p class="profile-link" id="profile-link">Learn more about my work <a href="https://www.freecodecamp.org/shannonetz">here</a></a>.</p>
-            </div>
+                <h2>My Work</h2>
+                <p class="profile-link" id="profile-link">Learn more about my work <a href="https://www.freecodecamp.org/shannonetz" target="_blank">here</a>.</p>
+            </section>
             <!--footer-->
             <footer>
                 <div>

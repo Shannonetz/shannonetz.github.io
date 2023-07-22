@@ -24,6 +24,10 @@ h3, h2{
 }
 
 /*navigation bar*/
+
+.navbar{
+  overflow:hidden;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -75,7 +79,6 @@ li a:hover{
     width:500px;
     height:100%;
     margin:auto;
-    float:center;
     padding-top:20px;
 }
 
@@ -91,7 +94,7 @@ li a:hover{
 }
 
 /*figures*/
-.project-tile1, .project-tile2, .project-tile3{
+.project-tile, .project-tile2, .project-tile3{
     width:300px;
     text-align:center;
     background-color:#e3b7a8;
